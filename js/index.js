@@ -68,3 +68,14 @@ logo.setAttribute('src', siteContent["nav"]["img-src"])
 // cta section
 let ctaImg = document.getElementById("cta-img");
 ctaImg.src = siteContent["cta"]["img-src"];
+
+let h1 = document.querySelector("h1");
+h1.textContent = siteContent["cta"]["h1"];
+
+let button = document.querySelector("button");
+button.textContent = siteContent["cta"]["button"];
+
+document.querySelector(".cta-text").appendChild(h1);
+document.querySelector(".cta-text").appendChild(button);
+
+//main section
