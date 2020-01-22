@@ -80,6 +80,40 @@ document.querySelector(".cta-text").appendChild(button);
 
 
 //main section
+let topContent = document.querySelector(".top-content");
+let one = document.querySelector(".one");
+let two = document.querySelector(".two");
+
+let textContentH4One = document.querySelector("#h4One");
+let textContentPOne = document.querySelector("#pOne");
+
+let textContentH4Two = document.querySelector("#h4Two");
+let textContentPTwo = document.querySelector("#pTwo");
+
+let middleImg = document.querySelector("#middle-img");
+
+
+
+textContentH4One.textContent = siteContent["main-content"]["features-h4"];
+textContentPOne.textContent = siteContent["main-content"]["features-content"];
+
+textContentH4Two.textContent = siteContent["main-content"]["about-h4"];
+textContentPTwo.textContent = siteContent["main-content"]["about-content"];
+
+middleImg.src = siteContent["main-content"]["middle-img-src"];
+
+
+
+
+one.appendChild(textContentH4One);
+one.appendChild(textContentPOne);
+
+two.appendChild(textContentH4Two);
+two.appendChild(textContentPTwo);
+
+
+topContent.appendChild(one);
+topContent.appendChild(two);
 
 
 
