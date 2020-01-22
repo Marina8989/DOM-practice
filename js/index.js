@@ -92,6 +92,10 @@ let textContentPTwo = document.querySelector("#pTwo");
 
 let middleImg = document.querySelector("#middle-img");
 
+let bottomContent = document.querySelector(".bottom-content");
+let three = document.querySelector(".three");
+let four = document.querySelector(".four");
+let five = document.querySelector(".five");
 
 
 textContentH4One.textContent = siteContent["main-content"]["features-h4"];
@@ -102,7 +106,23 @@ textContentPTwo.textContent = siteContent["main-content"]["about-content"];
 
 middleImg.src = siteContent["main-content"]["middle-img-src"];
 
+let textContentH4Three = document.querySelector("#h4Three");
+let textContentPThree = document.querySelector("#pThree");
 
+let textContentH4Four = document.querySelector("#h4Four");
+let textContentPFour = document.querySelector("#pFour");
+
+let textContentH4Five = document.querySelector("#h4Five");
+let textContentPFive = document.querySelector("#pFive");
+
+textContentH4Three.textContent = siteContent["main-content"]["services-h4"];
+textContentPThree.textContent = siteContent["main-content"]["services-content"];
+
+textContentH4Four.textContent = siteContent["main-content"]["product-h4"];
+textContentPFour.textContent = siteContent["main-content"]["product-content"];
+
+textContentH4Five.textContent = siteContent["main-content"]["vision-h4"];
+textContentPFive.textContent = siteContent["main-content"]["vision-content"];
 
 
 one.appendChild(textContentH4One);
@@ -111,9 +131,14 @@ one.appendChild(textContentPOne);
 two.appendChild(textContentH4Two);
 two.appendChild(textContentPTwo);
 
+three.appendChild(textContentH4Three);
+three.appendChild(textContentPThree);
 
-topContent.appendChild(one);
-topContent.appendChild(two);
+four.appendChild(textContentH4Four);
+four.appendChild(textContentPFour);
+
+five.appendChild(textContentH4Five);
+five.appendChild(textContentPFive);
 
 
 
