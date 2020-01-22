@@ -78,4 +78,65 @@ button.textContent = siteContent["cta"]["button"];
 document.querySelector(".cta-text").appendChild(h1);
 document.querySelector(".cta-text").appendChild(button);
 
+
 //main section
+
+let textContentOne = document.querySelector(".one");
+let textContentTwo = document.querySelector(".two");
+let textContentThree = document.querySelector(".three");
+let textContentFour = document.querySelector(".four");
+let textContentFive = document.querySelector(".five");
+let imagHero = document.getElementById("middle-img");
+let pTextContentOne = document.querySelector("p");
+let pTextContentTwo = document.querySelector("p");
+let topContent = document.querySelector("top-content");
+let h4One = document.querySelector("h4");
+let h4Two = document.querySelector("h4");
+let h4Three = document.querySelector("h4");
+let h4Four = document.querySelector("h4");
+let h4Five = document.querySelector("h4");
+
+topContent.style.flex = "flex";
+
+imagHero.src = siteContent["main-content"]["middle-img-src"];
+document.querySelector(".main-content").appendChild(imagHero);
+
+
+h4One.textContent = siteContent["main-content"]["features-h4"];
+pTextContentOne.textContent = siteContent["main-content"]["features-content"];
+
+textContentOne.appendChild(h4One);
+textContentOne.appendChild(pTextContentOne);
+topContent.appendChild(textContentOne);
+
+
+
+h4Two.textContent = siteContent["main-content"]["about-h4"];
+pTextContentTwo.textContent = siteContent["main-content"]["about-content"];
+
+textContentTwo.appendChild(h4Two);
+textContentTwo.appendChild(pTextContentTwo);
+topContent.appendChild(textContentTwo);
+
+
+
+
+
+
+
+
+
+
+
+
+h4Two.textContent = siteContent["main-content"]["about-h4"];
+
+h4Three.textContent = siteContent["main-content"]["services-h4"];
+h4Four.textContent = siteContent["main-content"]["product-h4"];
+h4Five.textContent = siteContent["main-content"]["vision-h4"];
+
+
+textContentTwo.appendChild(h4Two);
+textContentThree.appendChild(h4Three);
+textContentFour.appendChild(h4Four);
+textContentFive.appendChild(h4Five);
