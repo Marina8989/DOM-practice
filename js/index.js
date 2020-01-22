@@ -86,11 +86,22 @@ document.querySelector(".cta-text").appendChild(button);
 //contact
 let contact = document.querySelector(".contact");
 
-let footerH4 = document.getElementById("footer-h4").textContent = siteContent["contact"]["contact-h4"];
-let footerP1 = document.getElementById("footer-p1").textContent = siteContent["contact"]["address"];
-let footerP2 = document.getElementById("footer-p2").textContext = siteContent["contact"]["phone"];
+let footerH4 = document.querySelector("#footer-h4");
+footerH4.textContent = siteContent["contact"]["contact-h4"];
+let footerP1 = document.querySelector("#footer-p1");
+footerP1.textContent = siteContent["contact"]["address"];
+let footerP2 = document.querySelector("#footer-p2");
+footerP2.textContent = siteContent["contact"]["phone"];
+let footerP3 = document.querySelector("#footer-p3");
+footerP3.textContent = siteContent["contact"]["email"];
 
 
 contact.appendChild(footerH4);
 contact.appendChild(footerP1);
 contact.appendChild(footerP2);
+contact.appendChild(footerP3);
+
+//footer
+let footer = document.querySelector("footer");
+let footerP = document.querySelector("footer p");
+footerP.textContent = siteContent["footer"]["copyright"];
